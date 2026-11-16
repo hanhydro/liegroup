@@ -1,0 +1,345 @@
+{
+ "public": {
+  "r": 0.2,
+  "eta": 0.5,
+  "gamma": 1.0,
+  "T": 20,
+  "C": 0.2,
+  "C_one": 0.2,
+  "B": 0.87,
+  "rho": 1.1,
+  "delta": 1e-05,
+  "K": 0.25,
+  "d": 3,
+  "A0": 0.2,
+  "R_star": 0.4,
+  "trials": 100
+ },
+ "cameras": [
+  441,
+  48,
+  371,
+  1112,
+  1113,
+  1457,
+  1608,
+  1747,
+  1885,
+  2462,
+  263,
+  1343,
+  1360,
+  1941,
+  2518,
+  2244
+ ],
+ "degrees": [
+  215.0,
+  213.0,
+  213.0,
+  212.0,
+  212.0,
+  212.0,
+  212.0,
+  212.0,
+  211.0,
+  211.0,
+  210.0,
+  210.0,
+  210.0,
+  210.0,
+  210.0,
+  209.0
+ ],
+ "accepted_fraction": [
+  0.8697674418604651,
+  0.8685446009389671,
+  0.8450704225352113,
+  0.8490566037735849,
+  0.8726415094339622,
+  0.7924528301886793,
+  0.8915094339622641,
+  0.8820754716981132,
+  0.8767772511848341,
+  0.8341232227488151,
+  0.8666666666666667,
+  0.8809523809523809,
+  0.8333333333333334,
+  0.8809523809523809,
+  0.8666666666666667,
+  0.8899521531100478
+ ],
+ "min_accepted_fraction": 0.7924528301886793,
+ "classes": {
+  "0.75": {
+   "constants": {
+    "q0": 0.75,
+    "mu": 0.7399732313380342,
+    "kappa": 0.630013384330983,
+    "kappa_w": 0.630013384330983,
+    "kappa_one": 0.26002676866196583,
+    "kappa_one_w": 0.26002676866196583,
+    "kappa_pop": 0.6333433855212387,
+    "kappa_one_pop": 0.2733068447960303,
+    "beta": 0.003330001190255727,
+    "r_plus": 1.1,
+    "slacks": {
+     "client_clip": 1e-15,
+     "clip_order": 0.6699999999999999,
+     "containment": 0.030000000000000138,
+     "geometry": 0.9415926535897929,
+     "target_inside_clip": 0.47,
+     "tube": 0.7000000000000002,
+     "tube_one": 0.5000000000000001,
+     "contraction": 0.369986615669017,
+     "contraction_w": 0.369986615669017
+    }
+   },
+   "cameras_in_class": 16,
+   "excluded": [],
+   "by_budget": [
+    {
+     "eps": 1.0,
+     "observed_iterative": 0.08788929327456971,
+     "observed_oneshot": 0.01609870720483035,
+     "thm71_bound": 0.19416196775867836,
+     "squared_bound": 0.09250396033923437,
+     "squared_q95_bound": 0.1492989074584525,
+     "ratio_thm71": 2.20916519549325,
+     "ratio_squared": 1.0525054519467834,
+     "per_camera_ratio_squared_min": 0.9902619732793663,
+     "per_camera_ratio_squared_max": 1.1400203816356471,
+     "max_standardized_excess": 0.2420620084177388,
+     "oneshot_thm71_bound": 0.0680686220269599,
+     "oneshot_squared_bound": 0.054429744587905796,
+     "per_camera_pick_terminal": {
+      "one_step": 16
+     },
+     "per_camera_pick_squared": {
+      "one_step": 16
+     }
+    },
+    {
+     "eps": 2.0,
+     "observed_iterative": 0.04477716897754324,
+     "observed_oneshot": 0.008320750454479518,
+     "thm71_bound": 0.0990324383472193,
+     "squared_bound": 0.04717717705315767,
+     "squared_q95_bound": 0.07614269664974528,
+     "ratio_thm71": 2.2116726137127225,
+     "ratio_squared": 1.053598923969894,
+     "per_camera_ratio_squared_min": 1.00296930351305,
+     "per_camera_ratio_squared_max": 1.1213763862656654,
+     "max_standardized_excess": -0.07241011420542363,
+     "oneshot_thm71_bound": 0.06019764736119837,
+     "oneshot_squared_bound": 0.05264668784634399,
+     "per_camera_pick_terminal": {
+      "one_step": 16
+     },
+     "per_camera_pick_squared": {
+      "T20": 16
+     }
+    },
+    {
+     "eps": 4.0,
+     "observed_iterative": 0.023039703216348538,
+     "observed_oneshot": 0.004473784565751328,
+     "thm71_bound": 0.05136534540189038,
+     "squared_bound": 0.024465031352472747,
+     "squared_q95_bound": 0.039485903505815205,
+     "ratio_thm71": 2.229427389734886,
+     "ratio_squared": 1.0618639972372919,
+     "per_camera_ratio_squared_min": 0.9732293896953942,
+     "per_camera_ratio_squared_max": 1.1335204976713398,
+     "max_standardized_excess": 0.683047720505808,
+     "oneshot_thm71_bound": 0.056253693435594374,
+     "oneshot_squared_bound": 0.05217859807053697,
+     "per_camera_pick_terminal": {
+      "T20": 16
+     },
+     "per_camera_pick_squared": {
+      "T20": 16
+     }
+    },
+    {
+     "eps": 8.0,
+     "observed_iterative": 0.012160935576472937,
+     "observed_oneshot": 0.0025744955154328964,
+     "thm71_bound": 0.02736860388074834,
+     "squared_bound": 0.013031205142403007,
+     "squared_q95_bound": 0.02103201509958717,
+     "ratio_thm71": 2.2505344024432468,
+     "ratio_squared": 1.0715627149290825,
+     "per_camera_ratio_squared_min": 0.9834009245506372,
+     "per_camera_ratio_squared_max": 1.1730690923140343,
+     "max_standardized_excess": 0.4169450433754451,
+     "oneshot_thm71_bound": 0.05426821378755792,
+     "oneshot_squared_bound": 0.05205456373876581,
+     "per_camera_pick_terminal": {
+      "T20": 16
+     },
+     "per_camera_pick_squared": {
+      "T20": 16
+     }
+    },
+    {
+     "eps": 16.0,
+     "observed_iterative": 0.0068337117480372035,
+     "observed_oneshot": 0.001699274448816473,
+     "thm71_bound": 0.01514356482026861,
+     "squared_bound": 0.007206298702748959,
+     "squared_q95_bound": 0.011630772554884719,
+     "ratio_thm71": 2.2160087195100355,
+     "ratio_squared": 1.0545219009008935,
+     "per_camera_ratio_squared_min": 0.9769573821873784,
+     "per_camera_ratio_squared_max": 1.1274554192110218,
+     "max_standardized_excess": 0.5845524910253729,
+     "oneshot_thm71_bound": 0.05325671952990431,
+     "oneshot_squared_bound": 0.05202040763813087,
+     "per_camera_pick_terminal": {
+      "T20": 16
+     },
+     "per_camera_pick_squared": {
+      "T20": 16
+     }
+    }
+   ]
+  },
+  "0.80": {
+   "constants": {
+    "q0": 0.8,
+    "mu": 0.7893047800939031,
+    "kappa": 0.6053476099530484,
+    "kappa_w": 0.6053476099530484,
+    "kappa_one": 0.21069521990609685,
+    "kappa_one_w": 0.21069521990609685,
+    "kappa_pop": 0.6086776111433041,
+    "kappa_one_pop": 0.2239752960401613,
+    "beta": 0.003330001190255727,
+    "r_plus": 1.1,
+    "slacks": {
+     "client_clip": 1e-15,
+     "clip_order": 0.6699999999999999,
+     "containment": 0.030000000000000138,
+     "geometry": 0.9415926535897929,
+     "target_inside_clip": 0.47,
+     "tube": 0.7000000000000002,
+     "tube_one": 0.5000000000000001,
+     "contraction": 0.39465239004695163,
+     "contraction_w": 0.39465239004695163
+    }
+   },
+   "cameras_in_class": 15,
+   "excluded": [
+    1457
+   ],
+   "by_budget": [
+    {
+     "eps": 1.0,
+     "observed_iterative": 0.08783051609880213,
+     "observed_oneshot": 0.01600622344799772,
+     "thm71_bound": 0.18206347498762965,
+     "squared_bound": 0.09027007159336362,
+     "squared_q95_bound": 0.1456934710217946,
+     "ratio_thm71": 2.0728954248979155,
+     "ratio_squared": 1.0277757162649162,
+     "per_camera_ratio_squared_min": 0.9661549353631914,
+     "per_camera_ratio_squared_max": 1.112267610020405,
+     "max_standardized_excess": 0.8731023592223999,
+     "oneshot_thm71_bound": 0.05820552254732844,
+     "oneshot_squared_bound": 0.04509814348780435,
+     "per_camera_pick_terminal": {
+      "one_step": 15
+     },
+     "per_camera_pick_squared": {
+      "one_step": 15
+     }
+    },
+    {
+     "eps": 2.0,
+     "observed_iterative": 0.044704898100690636,
+     "observed_oneshot": 0.008211038966507843,
+     "thm71_bound": 0.09285695477536589,
+     "squared_bound": 0.046037887724221425,
+     "squared_q95_bound": 0.07430391427258592,
+     "ratio_thm71": 2.077109192067063,
+     "ratio_squared": 1.02981752962569,
+     "per_camera_ratio_squared_min": 0.9785528686816586,
+     "per_camera_ratio_squared_max": 1.0940774337519064,
+     "max_standardized_excess": 0.5427426003463094,
+     "oneshot_thm71_bound": 0.05033297485386692,
+     "oneshot_squared_bound": 0.04292834625728799,
+     "per_camera_pick_terminal": {
+      "one_step": 15
+     },
+     "per_camera_pick_squared": {
+      "one_step": 15
+     }
+    },
+    {
+     "eps": 4.0,
+     "observed_iterative": 0.023081887816799384,
+     "observed_oneshot": 0.0043048807460428695,
+     "thm71_bound": 0.048157737649047044,
+     "squared_bound": 0.023874217001652,
+     "squared_q95_bound": 0.03853234501205302,
+     "ratio_thm71": 2.086386435601556,
+     "ratio_squared": 1.0343268796357266,
+     "per_camera_ratio_squared_min": 0.9495367724789371,
+     "per_camera_ratio_squared_max": 1.1059257112160892,
+     "max_standardized_excess": 1.3363755092677585,
+     "oneshot_thm71_bound": 0.046388232722349924,
+     "oneshot_squared_bound": 0.04235275158440643,
+     "per_camera_pick_terminal": {
+      "one_step": 15
+     },
+     "per_camera_pick_squared": {
+      "T20": 15
+     }
+    },
+    {
+     "eps": 8.0,
+     "observed_iterative": 0.012149356279459306,
+     "observed_oneshot": 0.0023426840462602455,
+     "thm71_bound": 0.025655094980908625,
+     "squared_bound": 0.012716502186648016,
+     "squared_q95_bound": 0.020524092981500843,
+     "ratio_thm71": 2.1116423282674837,
+     "ratio_squared": 1.0466811487080656,
+     "per_camera_ratio_squared_min": 0.959460094441807,
+     "per_camera_ratio_squared_max": 1.1445108126950279,
+     "max_standardized_excess": 1.056844161680882,
+     "oneshot_thm71_bound": 0.044402356272822324,
+     "oneshot_squared_bound": 0.042199785273495174,
+     "per_camera_pick_terminal": {
+      "T20": 15
+     },
+     "per_camera_pick_squared": {
+      "T20": 15
+     }
+    },
+    {
+     "eps": 16.0,
+     "observed_iterative": 0.006834874929601154,
+     "observed_oneshot": 0.0014454405380834759,
+     "thm71_bound": 0.01419121829833319,
+     "squared_bound": 0.007032253002582295,
+     "squared_q95_bound": 0.011349867469526086,
+     "ratio_thm71": 2.0762952423419563,
+     "ratio_squared": 1.0288780811666818,
+     "per_camera_ratio_squared_min": 0.9531715363416385,
+     "per_camera_ratio_squared_max": 1.1000054481440729,
+     "max_standardized_excess": 1.2329736519989185,
+     "oneshot_thm71_bound": 0.043390659866317606,
+     "oneshot_squared_bound": 0.04215762863081167,
+     "per_camera_pick_terminal": {
+      "T20": 15
+     },
+     "per_camera_pick_squared": {
+      "T20": 15
+     }
+    }
+   ]
+  }
+ }
+}

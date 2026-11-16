@@ -1,0 +1,28 @@
+{
+ "declared_domain": {
+  "grad_norm": 5.155378480004346e-18,
+  "refinement_shift": -0.0
+ },
+ "allocation": {
+  "grad_norm_max": 1.3362509176588984e-18,
+  "refinement_shift_max": 4.878908851694918e-19
+ },
+ "camera_squared": {
+  "grad_norm_max": 1.4380923232102344e-16,
+  "refinement_shift_max": -0.0
+ },
+ "camera_pseudo_huber": {
+  "grad_norm_max": 4.854425668070889e-17,
+  "refinement_shift_max": 1.7872224701017933e-15,
+  "target_to_center_max_by_turn": [
+   0.0366492253918866,
+   0.10265022217867127,
+   0.18932548651839498
+  ],
+  "working_radius_by_turn": [
+   0.2,
+   0.2872664625997165,
+   0.37453292519943293
+  ]
+ }
+}

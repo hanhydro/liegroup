@@ -1,0 +1,28 @@
+=== Noise-scale check (C=0.30, T=20, delta=1e-05); geometry regime: see assumption_checks.py / Table 5 (SO(3) in-regime, SU(4) out) ===
+  grp     N   eps    sigma  eps_ach  Kmax  r     pi/(2sqrtK)  noise/r
+  SO(3)   200  1.00  0.0657   1.000  0.25  0.60      3.142    0.380
+  SO(3)   800  1.00  0.0164   1.000  0.25  0.60      3.142    0.095
+  SU(4)   400  1.00  0.0329   1.000  1.00  0.40      1.571    0.637
+=== (C) Equivariance  max|theta_T(h.D) - h.theta_T(D)| ===
+  SO(3): 1.39e-17
+  SU(3): 2.50e-15
+=== (B) Contraction  measured rate vs Euclidean reference (kappa_fed adds beta_Jac>0 and L_Pi>=1) ===
+  SO(3): measured=0.507  euclid_reference=0.500  difference=+0.007 (relative to the Euclidean reference)
+  SU(3): measured=0.524  euclid_reference=0.500  difference=+0.024 (relative to the Euclidean reference)
+  empirical noise-plus-clipping proxy uses measured kappa_hat=0.507 (diagnostic, not a public bound)
+=== (A)+(D) Floor vs 1/(N eps): SO(3), r=0.6, exact RDP sigma ===
+  N= 100 eps=1.0  Neps= 100.0  sigma=0.1315  emp=0.2689+-0.0083  proxy=0.5986+-0.0048  emp/proxy=0.45
+  N= 200 eps=1.0  Neps= 200.0  sigma=0.0657  emp=0.1304+-0.0065  proxy=0.3437+-0.0038  emp/proxy=0.38
+  N= 400 eps=1.0  Neps= 400.0  sigma=0.0329  emp=0.0673+-0.0042  proxy=0.2132+-0.0027  emp/proxy=0.32
+  N= 800 eps=1.0  Neps= 800.0  sigma=0.0164  emp=0.0332+-0.0020  proxy=0.1496+-0.0025  emp/proxy=0.22
+  N= 200 eps=0.5  Neps= 100.0  sigma=0.1301  emp=0.2594+-0.0135  proxy=0.5923+-0.0038  emp/proxy=0.44
+  N= 200 eps=2.0  Neps= 400.0  sigma=0.0335  emp=0.0665+-0.0032  proxy=0.2192+-0.0038  emp/proxy=0.30
+  N= 200 eps=4.0  Neps= 800.0  sigma=0.0174  emp=0.0345+-0.0017  proxy=0.1569+-0.0038  emp/proxy=0.22
+  log-log slope floor vs (N eps), eps=1 points: -1.001  95% CI [-1.051,-0.951]  (predict -1)
+=== (D) Floor vs sqrt(d): r=0.4, N=400, eps=1 (SU(n) out of the proved regime; sqrt(d) scaling check) ===
+  d= 3  sigma=0.0329  emp=0.0667+-0.0057  emp/sqrt(d)=0.0385
+  d= 3  sigma=0.0329  emp=0.0660+-0.0022  emp/sqrt(d)=0.0381
+  d= 8  sigma=0.0329  emp=0.1053+-0.0085  emp/sqrt(d)=0.0372
+  d=15  sigma=0.0329  emp=0.1611+-0.0117  emp/sqrt(d)=0.0416
+  log-log slope floor vs sqrt(d): 1.074  95% CI [0.780,1.368]  (predict +1)
+=== Cross-seed empirical mean below the sampled diagnostic proxy in every tested SO(3) configuration: True ===
